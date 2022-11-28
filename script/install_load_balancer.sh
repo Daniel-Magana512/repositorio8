@@ -4,8 +4,7 @@ set -x
 
 #variables de configuración pongo las ip de la maquinas derl servidor web
 
-IP_HTTP_SERVER_1=172.31.10.11
-IP_HTTP_SERVER_2=172.31.13.184
+source variables.sh
 
 #Actualizamos los repositorios
 apt update
