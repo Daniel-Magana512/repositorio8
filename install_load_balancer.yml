@@ -86,7 +86,7 @@
       dest: /etc/apache2/sites-available/
       remote_src: yes
 
-  - name: Cambiamos el contenido del archivo 000-default-le-ssl.conf
+  - name: Cambiamos el contenido del archivo 000-default.conf
     ansible.builtin.replace:
       path: /etc/apache2/sites-available/000-default.conf
       regexp: IP_HTTP_SERVER_1

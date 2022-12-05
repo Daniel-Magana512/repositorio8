@@ -4,9 +4,8 @@ DB_NAME: db_name
 DB_USER: db_user
 DB_PASS: db_pass
 
-DOMAIN: practicadmplocal.ddns.net
-PS_EMAIL: chema512@gmail.com
-
+DOMAIN: dmp8practicaasir.ddns.net
+PS_EMAIL: danielmp01189@gmail.com
 
 IP_HTTP_SERVER_1: 52.202.237.39
 IP_HTTP_SERVER_2: 44.212.227.221

@@ -8,12 +8,6 @@
 
 #  ansible-galaxy collection install community.general
 
-# Este paso hay que tener cuidado porque por defecto si lo ejecuto me dará fallo
-  - name: Desinstalación de instalación previa de Certbot
-    ansible.builtin.apt:
-      name: certbot
-      tate: absent
-
   - name: Instalación de cerbot mediante snap
     community.general.snap:
       name: certbot
