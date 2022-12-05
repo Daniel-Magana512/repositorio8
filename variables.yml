@@ -1,0 +1,18 @@
+---
+DB_HOST_PRIVATE_IP: 172.31.15.185
+DB_NAME: db_name
+DB_USER: db_user
+DB_PASS: db_pass
+
+
+IP_HTTP_SERVER_1: 52.202.237.39
+IP_HTTP_SERVER_2: 44.212.227.221
+
+php_paquetes:
+  - php
+  - libapache2-mod-php 
+  - php-mysql
+
+
+
+
