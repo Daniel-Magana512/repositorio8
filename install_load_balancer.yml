@@ -78,7 +78,7 @@
   - name: Movemos los archivos de configuración a /etc/apache2/sites-availeble
     copy:
       src: /tmp/archivos/conf/*
-      dest: /etc/apache2/sites-available
+      dest: /etc/apache2/sites-available/
       remote_src: yes
 
   - name: Cambiamos el contenido del archivo 000-default-le-ssl.conf
