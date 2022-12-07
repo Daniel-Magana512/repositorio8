@@ -47,3 +47,35 @@ Creamos un archivo que será el 000-default.conf
 
 **Luego este archivo irá al directorio del balanceador /etc/apache2/sites-available/**
 
+## **Archivo install_load_balancer.yml**
+
+En este achivo vamos a instalar las herramientas necesarias y configuraciones que necesitará el balanceador.
+
+![](./fotos/foto_5.PNG)
+
+* **Metemos el grupo del balanceador**
+
+* **Actualizamos repositorios e instalamos el servidor de apache**
+
+*Instalamos los modulos necesarios para que el la máquina funcione de balanceador*
+
+* **proxy: Permite configurar el servidor web como un proxy inverso.**
+
+* **proxy_http: Permite configurar el servidor web como un proxy inverso para el protocolo HTTP.**
+
+* **proxy_ajp: Permite configurar el servidor web como un proxy inverso para el protocolo AJP (Apache JServ Protocol).**
+
+* **rewrite: Permite al servidor reescribir las peticiones HTTP que recibe.**
+
+* **deflate: Permite comprimir el contenido que se envía al cliente.**
+
+* **headers: Permite al servidor web manipular las cabeceras de las peticiones/respuestas HTTP que envía/recibe.**
+
+* **proxy_connect: Permite configurar el servidor web como un servidor proxy que puede establecer conexiones HTTPS con los servidores donde distribuye la carga, utilizando el método CONNECT de HTTP.**
+
+* **proxy_html: Permite configurar el servidor web como un servidor proxy que puede filtrar y modificar el contenido HTML de las páginas web que se reciben de los servidores donde se distribuye la carga.**
+
+
+![](./fotos/foto_6.PNG)
+
+Ahora vamos
