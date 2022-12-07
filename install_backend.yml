@@ -12,7 +12,7 @@
     apt:
       name: mysql-server
       state: present
-      
+
   - name: Cambiamos las variables de mysql para que me accepte conexiones desde cualquier interfaz
     ansible.builtin.replace:
       path: /etc/mysql/mysql.conf.d/mysqld.cnf
