@@ -78,4 +78,19 @@ En este achivo vamos a instalar las herramientas necesarias y configuraciones qu
 
 ![](./fotos/foto_6.PNG)
 
-Ahora vamos
+* **Ahora vamos a llevar el archivo 000-defautl.conf que he mencionado en los apartados anteriores, para ello he usado una clonación (para clonar me obligaba a poner el repositorio público.)**
+
+![](./fotos/foto_7.PNG)
+
+
+* **Elimino el archivo que haya 000-default.conf**
+
+* **Clonamos el repositorio de esta práctica**
+
+* **Desplazamos el archivo de configuración 000-default.conf al directorio /etc/apache2/sites-available/**
+
+* **Cambiamos las dos variables por las IPs de las máquinas front-end del archivo 000-default.conf**
+
+* **Eliminamos los archivos del directorio tmp**
+
+* **Reiniciamos el servidor de apache**
