@@ -25,6 +25,7 @@ Tendría 3 grupos:
 * **Front-end**
 * **Back-end**
 * **balanceador**
+
 Esto se debe a que los achivos de extensión **.yml** no a todos vamos a aplicarle la misma configuración por eso los ponemos por separado.
 
 Ahora vamos al archivo de **variables.yml**
@@ -35,4 +36,14 @@ Ahora vamos al archivo de **variables.yml**
 
 * **El siguiente paso es crear un dominio y un correo para que cuando accedamos al balanceador, sea a través del puerto 443, se debe al certificado**
 
+
+## **Archivo de configuración**
+
+Creamos un archivo que será el 000-default.conf
+
+![](./fotos/foto_4.PNG)
+
+**Pondremos las variables definidas en el archivo llamado variables.yml, en esas variables van las IPs de los front-end, donde le estemos diciendo las URL para llegar a los front-end**
+
+**Luego este archivo irá al directorio del balanceador /etc/apache2/sites-available/**
 
