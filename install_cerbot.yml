@@ -3,10 +3,13 @@
   hosts: balanceador
   become: yes
 
-
   tasks:
 
 #  ansible-galaxy collection install community.general
+
+  - name: Añadimos las variables
+    ansible.builtin.include_vars:
+      ./variables.yml
 
   - name: Instalación de cerbot mediante snap
     community.general.snap:

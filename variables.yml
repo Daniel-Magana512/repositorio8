@@ -4,11 +4,13 @@ DB_NAME: db_name
 DB_USER: db_user
 DB_PASS: db_pass
 
-DOMAIN: dmp8practicaasir.ddns.net
-PS_EMAIL: danielmp01189@gmail.com
-
 IP_HTTP_SERVER_1: 52.202.237.39
-IP_HTTP_SERVER_2: 44.212.227.221
+IP_HTTP_SERVER_2: 35.175.155.94
+DOMAIN: prueba8dmpasi27.ddns.net
+PS_EMAIL: prueba51229asir@gmail.com
+
+
+
 
 php_paquetes:
   - php

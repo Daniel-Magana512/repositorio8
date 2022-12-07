@@ -1,6 +1,6 @@
 ---
 - name: Playbook para instalar la pila backend
-  hosts: bak
+  hosts: balanceador
   become: yes
 
   tasks:
