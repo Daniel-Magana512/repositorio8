@@ -94,3 +94,20 @@ En este achivo vamos a instalar las herramientas necesarias y configuraciones qu
 * **Eliminamos los archivos del directorio tmp**
 
 * **Reiniciamos el servidor de apache**
+
+
+Una cosa que no he mencionado antes , es que para que el balanceador use el puerto 443 tendremos que asociar su IP aún nombre de dominio, el archivo que se encargará de esa fase es install_cerbot, como ya lo he explicado en otros apartado no lo explicaré, ya que funciona de la misma forma.
+
+
+## **Comprobación**
+
+Si yo pongo el nombre del dominio en el navegador me aparece el index.php del primer front-end.
+
+![](./fotos/foto_8.PNG)
+
+Ahora si le doy a la tecla **F5** me llevará a otra pantalla que es la del segundo front-end.
+
+Puse mi nombre en el titulo de index.php para que se apreciara de que funciona.
+
+![](./fotos/foto_9.PNG)
+
