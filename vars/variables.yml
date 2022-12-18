@@ -1,12 +1,12 @@
 ---
-DB_HOST_PRIVATE_IP: 172.31.68.225
+DB_HOST_PRIVATE_IP: 172.31.65.147
 DB_NAME: db_name
 DB_USER: db_user
 DB_PASS: db_pass
 
-IP_HTTP_SERVER_1: 172.31.79.147
-IP_HTTP_SERVER_2: 172.31.64.126
-DOMAIN: practica7josejuan.ddns.net
+IP_HTTP_SERVER_1: 172.31.11.39
+IP_HTTP_SERVER_2: 172.31.11.9
+DOMAIN: practica8funcionar.ddns.net
 PS_EMAIL: prueba51229asir@gmail.com
 
 
