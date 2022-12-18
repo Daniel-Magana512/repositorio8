@@ -7,7 +7,7 @@
 
   - name: Añadimos las variables
     ansible.builtin.include_vars:
-      ./variables.yml
+      ../vars/variables.yml
 
   - name: Eliminamos el directorio de instalaciones previas
     file:
@@ -34,25 +34,25 @@
     ansible.builtin.replace:
       path: /var/www/html/config.php
       regexp: localhost
-      replace: "{{DB_HOST_PRIVATE_IP}}"
+      replace: "{{ DB_HOST_PRIVATE_IP }}"
 
   - name: Configuramos las variables de conexión gbd
     ansible.builtin.replace:
       path: /var/www/html/config.php
       regexp: lamp_db
-      replace: "{{DB_NAME}}"
+      replace: "{{ DB_NAME }}"
 
   - name: Configuramos las variables de conexión gbd
     ansible.builtin.replace:
       path: /var/www/html/config.php
       regexp: lamp_user
-      replace: "{{DB_USER}}"
+      replace: "{{ DB_USER }}"
 
   - name: Configuramos las variables de conexión gbd
     ansible.builtin.replace:
       path: /var/www/html/config.php
       regexp: lamp_password
-      replace: "{{DB_PASS}}"
+      replace: "{{ DB_PASS }}"
 
   - name: Cambiamos  de propietario y grupo de forma recursiva al directorio /var/www/html
     ansible.builtin.file:
@@ -70,8 +70,3 @@
     service:
       name: apache2
       state: restarted 
-
-
-
-
-

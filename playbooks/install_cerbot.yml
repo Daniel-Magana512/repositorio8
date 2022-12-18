@@ -9,7 +9,7 @@
 
   - name: Añadimos las variables
     ansible.builtin.include_vars:
-      ./variables.yml
+      ../vars/variables.yml
 
   - name: Instalación de cerbot mediante snap
     community.general.snap:
@@ -18,7 +18,7 @@
       state: present
 
   - name: Descarga el certificado 
-    ansible.builtin.command: certbot --apache -m {{PS_EMAIL}}  --agree-tos --no-eff-email -d {{DOMAIN}}
+    ansible.builtin.command: certbot --apache -m {{ PS_EMAIL }}  --agree-tos --no-eff-email -d {{ DOMAIN }}
     register: my_output
     changed_when: my_output.rc !=0
 

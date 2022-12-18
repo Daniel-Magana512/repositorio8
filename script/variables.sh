@@ -8,5 +8,5 @@ $DB_NAME=db_name
 $DB_USER=db_user
 $DB_PASS=db_pass
 
-$PS_EMAIL= danielmp01189@gmail.com
-$DOMAIN = pra8asirdmp512.ddns.net
+$PS_EMAIL=danielmp01189@gmail.com
+$DOMAIN =pra8asirdmp512.ddns.net
