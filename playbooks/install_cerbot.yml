@@ -19,8 +19,6 @@
 
   - name: Descarga el certificado 
     ansible.builtin.command: certbot --apache -m {{ PS_EMAIL }}  --agree-tos --no-eff-email -d {{ DOMAIN }}
-    register: my_output
-    changed_when: my_output.rc !=0
 
   - name: Reinicamos apache2
     service: 

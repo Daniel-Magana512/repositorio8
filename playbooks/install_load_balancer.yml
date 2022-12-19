@@ -70,21 +70,13 @@
 
 #--------------------------------------------------------
 
-  - name: Eliminamos los archivos clonados innecesarios.
-    file:
-      path: /etc/apache2/sites-available/000-default.conf
 
-
-  - name: Clonamos el repositorio
-    git:
-      repo: https://github.com/Daniel-Magana512/repositorio8.git
-      dest: /tmp/archivos
 
   - name: Movemos los archivos de configuración a /etc/apache2/sites-availeble
     copy:
-      src: /tmp/archivos/conf/000-default.conf
+      src: /home/ubuntu/repositorio8/conf/000-default.conf
       dest: /etc/apache2/sites-available/
-      remote_src: yes
+
 
   - name: Cambiamos el contenido del archivo 000-default.conf
     ansible.builtin.replace:
@@ -97,10 +89,6 @@
       path: /etc/apache2/sites-available/000-default.conf
       regexp: IP_HTTP_SERVER_2
       replace: "{{ IP_HTTP_SERVER_2 }}"
-
-  - name: Eliminamos los archivos clonados innecesarios.
-    file:
-      path: /tmp/archivos
 
   - name: Reinicamos apache2
     service: 
